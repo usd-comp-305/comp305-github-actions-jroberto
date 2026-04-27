@@ -2,9 +2,11 @@ package edu.sandiego.comp305;
 
 public class SpringUtils {
 
-    public static String reverseString(String forwardString){
+    private SpringUtils() {}
 
-        StringBuilder sbf = new StringBuilder(forwardString);
+    public static String reverseString(final String forwardString){
+
+        final StringBuilder sbf = new StringBuilder(forwardString);
 
         String backwardString = "";
 

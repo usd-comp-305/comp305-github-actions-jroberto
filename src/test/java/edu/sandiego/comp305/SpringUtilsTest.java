@@ -2,6 +2,8 @@ package edu.sandiego.comp305;
 
 import org.junit.jupiter.api.Test;
 
+import javax.swing.*;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //import static org.testng.AssertJUnit.assertEquals;
@@ -10,9 +12,8 @@ public class SpringUtilsTest {
 
     @Test
     public void TestNormalWord() {
-        String word = "hello";
-        SpringUtils reverser = new SpringUtils();
-        String reversed = reverser.reverseString(word);
+        final String word = "hello";
+        final String reversed = SpringUtils.reverseString(word);
 
         assertEquals("olleh", reversed);
 
@@ -20,9 +21,8 @@ public class SpringUtilsTest {
 
     @Test
     public void TestSentence() {
-        String sentence = "hello world";
-        SpringUtils reverser = new SpringUtils();
-        String reversed = reverser.reverseString(sentence);
+        final String sentence = "hello world";
+        final String reversed = SpringUtils.reverseString(sentence);
 
         assertEquals("dlrow olleh", reversed);
 
@@ -30,9 +30,8 @@ public class SpringUtilsTest {
 
     @Test
     public void TestPalindrome() {
-        String palindrome = "racecar";
-        SpringUtils reverser = new SpringUtils();
-        String reversed = reverser.reverseString(palindrome);
+        final String palindrome = "racecar";
+        final String reversed = SpringUtils.reverseString(palindrome);
 
         assertEquals("racecar", reversed);
     }
@@ -40,9 +39,8 @@ public class SpringUtilsTest {
 
     @Test
     public void TestSingleChar() {
-        String singleChar = "a";
-        SpringUtils reverser = new SpringUtils();
-        String reversed = reverser.reverseString(singleChar);
+        final String singleChar = "a";
+        final String reversed = SpringUtils.reverseString(singleChar);
 
         assertEquals("a", reversed);
 
@@ -50,9 +48,8 @@ public class SpringUtilsTest {
 
     @Test
     public void TestEmpty() {
-        String empty = "";
-        SpringUtils reverser = new SpringUtils();
-        String reversed = reverser.reverseString(empty);
+        final String empty = "";
+        final String reversed = SpringUtils.reverseString(empty);
 
         assertEquals("", reversed);
 
@@ -60,9 +57,8 @@ public class SpringUtilsTest {
 
     @Test
     public void TestUppercase(){
-        String sentenceUpper = "Hello World";
-        SpringUtils reverser = new SpringUtils();
-        String reversed = reverser.reverseString(sentenceUpper);
+        final String sentenceUpper = "Hello World";
+        final String reversed = SpringUtils.reverseString(sentenceUpper);
 
         assertEquals("dlroW olleH", reversed);
 
